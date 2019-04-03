@@ -1,0 +1,17 @@
+<div>
+  <h1>Login Form</h1>
+  <label>Name:</label>
+  <app-input-component [data]="'text'"></app-input-component><br>
+  <!--text-->
+
+  <label>Password:</label>
+  <app-input-component [data]="'password'"></app-input-component><br>
+  <!--password-->
+
+
+  <app-submit-component (registerMsg)="alertLogin()"></app-submit-component>
+  <!--submit -->
+</div>
+
+
+

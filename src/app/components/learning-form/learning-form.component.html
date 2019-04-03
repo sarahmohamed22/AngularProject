@@ -1,0 +1,37 @@
+<p>
+  learning-form works!
+</p>
+<form (ngSubmit)="onSubmit(userForm)" #userForm="ngForm">
+  <input type="text" [(ngModel)]="formData.name"
+  name="ngModel" placeholder="Name"
+   required><br>
+  <span *ngIf="formData.name===' '">name is required</span>
+  <input type="number" [(ngModel)]="formData.age" 
+  name="ngModel" placeholder="Age" required><br>
+  <span *ngIf="formData.age <= 0">age is required</span>
+  <button [disabled]="userForm.invalid">Save</button>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
