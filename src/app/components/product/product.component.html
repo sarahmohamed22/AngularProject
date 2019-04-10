@@ -1,0 +1,16 @@
+<div class="row">
+<div class="col-md-3" *ngFor="let product of products">
+  <div class="thumbnail">
+      <div >
+      <img src="../assets/images/{{product.photo}}.jpg" width="150" height="150">
+      </div>
+      <div class="caption">
+        <h3>{{product.name}}</h3>
+        <h3>best product available in market</h3>
+        <p><strong>price:</strong>{{product.price}}</p>
+        <p><button class="btn btn-primary" [routerLink]="['/cart', { id:product.id }]">Buy Now</button></p> 
+        <p><button class="btn btn-primary" [routerLink]="['/details', { id:product.id }]">Veiw Details</button></p> 
+      </div>
+  </div>
+</div>
+</div>
